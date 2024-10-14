@@ -1,0 +1,9 @@
+---
+- name: Test
+  hosts: all
+  vars:
+    message: "Hello, world!"
+  tasks:
+    - name: Say something
+      ansible.builtin.debug:
+        msg: "{{ message }}"
